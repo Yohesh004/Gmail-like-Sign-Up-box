@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    user-select: none;
+}
+img{
+    height: 40px;
+    display: block;
+    margin: auto;
+}
+.form{
+    min-height:400px;
+    width:400px;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+.title{
+    font-size: 20px;
+    font-weight: 500 ;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.textbox{
+    height:40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.textc{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: none;
+    border:1px solid #a1a1a1;
+    outline:none;
+    padding-left: 10px;
+    border-radius: 3px;
+    z-index: 1;
+}
+.label{
+    position: absolute;
+    left: 13px;
+    top: 15px;
+    color:#a1a1a1;
+    background-color: white;
+    padding:0 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.textc:focus+ .label{
+    top:-8px;
+    z-index:9;
+    color:#1B66C9;
+    font-weight:500;
+
+}
+.textc:focus{
+    border: 1px solid #1B66C9;
+}
+.textc:not(:focus):valid+.label{
+    top:-8px;
+    z-index: 9;
+}
+.show-label{
+    font-size: 15px;
+}
+#show{
+    height: 12px;
+}
+.libt{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:35px;
+}
+.btn{
+    padding:15px 25px;
+    background-color: #1B66C9;
+    border:none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.btn:hover{
+    box-shadow: 0 10px 36px rgba(0,0,0,.2);
+}
+.link{
+    text-decoration: none;
+    color:#1B66C9;
+    font-weight: 500;
+    font-size: 15px;;
+    
+}
